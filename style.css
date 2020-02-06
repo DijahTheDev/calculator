@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-right: 200px;
+  margin-bottom: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.textview {
+  width: 145px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+table {
+  border-spacing: 0px;
+}
