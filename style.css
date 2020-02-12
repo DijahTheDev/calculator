@@ -1,31 +1,88 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  font-size: 26px;
+  font-family: arial;
 }
-
-#button {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-right: 200px;
-  margin-bottom: none;
-  font-size: 25px;
+button {
   cursor: pointer;
+  outline: 0;
+}
+#calc {
+  width: 300px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-areas:
+    "C result result result"
+    "seven eight nine div"
+    "four five six mul"
+    "one two three sub"
+    "zero dot equals add";
 }
 
-.button {
-  width: 50px;
-  height: 50px;
-  font-size: 25px;
-  cursor: pointer;
+#calc button,
+#calc div {
+  height: 75px;
+  background: rgb(96, 170, 80);
+  color: white;
+  border: 1px solid white;
 }
 
-.textview {
-  width: 145px;
-  font-size: 20px;
-  margin-left: 50px;
+#calc button.operator {
+  background: rgb(124, 185, 111);
 }
 
-table {
-  border-spacing: 0px;
+#calc button:nth-child(1) {
+  grid-area: one;
+}
+
+#calc button:nth-child(2) {
+  grid-area: two;
+}
+#calc button:nth-child(3) {
+  grid-area: three;
+}
+#calc button:nth-child(4) {
+  grid-area: four;
+}
+#calc button:nth-child(5) {
+  grid-area: five;
+}
+#calc button:nth-child(6) {
+  grid-area: six;
+}
+#calc button:nth-child(7) {
+  grid-area: seven;
+}
+#calc button:nth-child(8) {
+  grid-area: eight;
+}
+#calc button:nth-child(9) {
+  grid-area: nine;
+}
+#calc button:nth-child(10) {
+  grid-area: zero;
+}
+#calc button:nth-child(11) {
+  grid-area: C;
+}
+#calc button:nth-child(12) {
+  grid-area: dot;
+}
+#calc button:nth-child(13) {
+  grid-area: equals;
+}
+#calc button:nth-child(14) {
+  grid-area: add;
+}
+#calc button:nth-child(15) {
+  grid-area: sub;
+}
+#calc button:nth-child(16) {
+  grid-area: mul;
+}
+#calc button:nth-child(17) {
+  grid-area: div;
+}
+#calc div {
+  grid-area: result;
 }
